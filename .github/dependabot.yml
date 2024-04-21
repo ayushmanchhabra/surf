@@ -16,3 +16,11 @@ updates:
       gha:
         patterns:
           - "*"
+  - package-ecosystem: "pip"
+    directory: "."
+    schedule:
+      interval: "daily"
+    groups:
+      pip:
+        patterns:
+          - "*"
