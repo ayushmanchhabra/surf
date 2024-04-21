@@ -2,6 +2,13 @@
 
 A browser with the goal of inversion of control.
 
+## Components
+
+- Chrome
+- Render
+- Service
+- Utility
+
 ## Dependencies
 
 C

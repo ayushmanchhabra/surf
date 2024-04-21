@@ -15,9 +15,8 @@ jobs:
       matrix:
         os:
           - ubuntu-latest
-          # - windows-latest
-          # - macos-latest
-    fails-fast: false
+        # - windows-latest
+        # - macos-latest
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout
@@ -27,7 +26,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5.1.1
         with:
-          python-version: '3.12'
+          python-version: "3.12"
       - name: Compile debug build
         run: make debug
       - name: Run tests
