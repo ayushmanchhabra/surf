@@ -1,4 +1,4 @@
-name: e2e
+name: debug
 
 on:
   pull_request:
@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  debug:
+  e2e:
     strategy:
       matrix:
         os:
