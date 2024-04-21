@@ -1,0 +1,19 @@
+# Copyright (c) The Surf Authors
+
+config("default_config") {
+  cflags = []
+  cflags_c = []
+  cflags_cc = []
+  defines = []
+  ldflags = []
+}
+
+config("executable") {
+}
+
+config("shared_library") {
+  cflags = [ "-fPIC" ]
+}
+
+config("static_library") {
+}

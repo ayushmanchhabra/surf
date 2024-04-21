@@ -1,0 +1,24 @@
+# Copyright (c) The Surf Authors
+
+executable("surf") {
+    sources = [
+        "//surf/main.cc",
+        "//surf/main.h",
+        "//surf/version.cc",
+        "//surf/version.h",
+    ]
+}
+
+shared_library("libsurf") {
+    sources = [
+        "//surf/version.cc",
+        "//surf/version.h",
+    ]
+}
+
+static_library("libsurf_static") {
+    sources = [
+        "//surf/version.cc",
+        "//surf/version.h",
+    ]
+}

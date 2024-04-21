@@ -1,0 +1,34 @@
+name: e2e
+
+on:
+  pull_request:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  debug:
+    strategy:
+      matrix:
+        os:
+          - ubuntu-latest
+          # - windows-latest
+          # - macos-latest
+    fail-fast: false
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+        with:
+          submodules: true
+      - name: Setup Python
+        uses: actions/setup-python@v5.1.1
+        with:
+          python-version: '3.12'
+      - name: Compile debug build
+        run: make debug
+      - name: Run tests
+        run: make test

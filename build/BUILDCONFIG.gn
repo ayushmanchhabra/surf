@@ -1,0 +1,26 @@
+# Copyright (c) The Surf Authors
+
+declare_args() {
+  cc = "clang"
+  cxx = "clang++"
+  build_type = "Debug"
+}
+
+if (host_os == "linux") {
+  set_default_toolchain("//build/toolchain:clang")
+}
+
+set_defaults("executable") {
+  configs = [ "//build/config:default_config" ]
+  configs += [ "//build/config:executable" ]
+}
+
+set_defaults("shared_library") {
+  configs = [ "//build/config:default_config" ]
+  configs += [ "//build/config:shared_library" ]
+}
+
+set_defaults("static_library") {
+  configs = [ "//build/config:default_config" ]
+  configs += [ "//build/config:static_library" ]
+}
