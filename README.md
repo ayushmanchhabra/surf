@@ -6,7 +6,9 @@ A browser with the goal of inversion of control.
 
 ## Build
 
-
+1. Clone repo: `git clone --recurse-submodules https://github.com/ayushmanchhabra/surf.git`
+1. Run build: `make`
+1. Execute binary: `./out/surf`
 
 ## Components
 
