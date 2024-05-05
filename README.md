@@ -13,18 +13,18 @@ A browser with the goal of inversion of control.
 
 ## Dependencies
 
-C
-C++
-Clang
-Clang Format
-Clang Tidy
-LLVM
-Git
-GN
-GN Language Server
-Make
-Ninja
-Python
+- C
+- C++
+- Clang
+- Clang Format
+- Clang Tidy
+- Git
+- GN
+- GN Language Server
+- LLVM
+- Make
+- Ninja
+- Python
 
 ## Sprint 1
 
