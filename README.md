@@ -24,6 +24,7 @@ A browser with the goal of inversion of control.
 - Clang
 - Clang Format
 - Clang Tidy
+- cURL
 - Git
 - GN
 - GN Language Server
