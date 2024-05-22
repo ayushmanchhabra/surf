@@ -19,9 +19,11 @@ executable("surf") {
 }
 
 shared_library("libsurf") {
+    ldflags = [
+        "-lcurl",
+    ]
+
     sources = [
-        "//surf/cli.cc",
-        "//surf/cli.h",
         "//surf/http.cc",
         "//surf/http.h",
         "//surf/version.cc",
@@ -30,9 +32,11 @@ shared_library("libsurf") {
 }
 
 static_library("libsurf_static") {
+    ldflags = [
+        "-lcurl",
+    ]
+    
     sources = [
-        "//surf/cli.cc",
-        "//surf/cli.h",
         "//surf/http.cc",
         "//surf/http.h",
         "//surf/version.cc",
