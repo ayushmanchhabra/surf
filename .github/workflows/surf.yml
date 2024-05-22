@@ -34,5 +34,7 @@ jobs:
           pip install -r requirements.txt
       - name: Compile and test
         run: |
+          apt update
+          apt install -y curl
           make debug
           make test
