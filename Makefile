@@ -20,7 +20,7 @@ lint:
 	clang-format -i **/*.cc **/*.h
 
 test: $(TARGET_EXE) ##	Run	tests
-	python -m pytest ./tests/*
+	python -m pytest ./tests/*.py
 	
 $(TARGET_EXE): $(GN_EXE)
 	$(GN_EXE) gen out
