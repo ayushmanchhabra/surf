@@ -20,12 +20,15 @@ A browser with the goal of inversion of control.
 
 ## Dependencies
 
+Note: development dependencies include production dependencies.
+
+### Developement
+
 - C
 - C++
 - Clang
 - Clang Format
 - Clang Tidy
-- cURL
 - Git
 - GN
 - GN Language Server
@@ -33,6 +36,10 @@ A browser with the goal of inversion of control.
 - Make
 - Ninja
 - Python
+
+### Production
+
+- cURL
 
 ## Sprint 1
 
