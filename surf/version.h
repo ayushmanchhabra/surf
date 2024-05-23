@@ -8,7 +8,7 @@
 #define SURF_PATCH_VERSION 0
 
 namespace surf {
-    std::string version();
+std::string version();
 } // namespace surf
 
 #endif // _SURF_VERSION_H_

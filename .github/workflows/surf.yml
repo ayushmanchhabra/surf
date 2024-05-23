@@ -1,4 +1,4 @@
-name: debug
+name: surf
 
 on:
   pull_request:
@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  e2e:
+  debug:
     strategy:
       matrix:
         os:
@@ -34,5 +34,6 @@ jobs:
           pip install -r requirements.txt
       - name: Compile and test
         run: |
+          sudo apt install libcurl4-openssl-dev
           make debug
           make test

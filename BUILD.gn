@@ -1,7 +1,16 @@
 # Copyright (c) The Surf Authors
 
 executable("surf") {
+
+    ldflags = [
+        "-lcurl",
+    ]
+
     sources = [
+        "//surf/cli.cc",
+        "//surf/cli.h",
+        "//surf/http.cc",
+        "//surf/http.h",
         "//surf/main.cc",
         "//surf/main.h",
         "//surf/version.cc",
@@ -10,14 +19,26 @@ executable("surf") {
 }
 
 shared_library("libsurf") {
+    ldflags = [
+        "-lcurl",
+    ]
+
     sources = [
+        "//surf/http.cc",
+        "//surf/http.h",
         "//surf/version.cc",
         "//surf/version.h",
     ]
 }
 
 static_library("libsurf_static") {
+    ldflags = [
+        "-lcurl",
+    ]
+
     sources = [
+        "//surf/http.cc",
+        "//surf/http.h",
         "//surf/version.cc",
         "//surf/version.h",
     ]
