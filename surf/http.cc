@@ -2,6 +2,8 @@
 
 #include <stdio.h>
 
+#include <curl/curl.h>
+
 #include "http.h"
 
 int surf::http::get(FILE *file, char uri[]) {

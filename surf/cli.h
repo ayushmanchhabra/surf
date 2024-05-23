@@ -4,7 +4,7 @@
 #define _SURF_CLI_H_
 
 namespace surf {
-  int cli(int argc, char *argv[]);
+int cli(int argc, char *argv[]);
 }
 
 #endif // _SURF_CLI_H_
