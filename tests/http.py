@@ -11,7 +11,7 @@ def http_get():
 def html_get():
     with open('./tests/http.html') as f:
         content = f.readlines()
-    return content
+    return ''.join(content).strip()
 
 def test_http():
     assert http_get() == html_get()
