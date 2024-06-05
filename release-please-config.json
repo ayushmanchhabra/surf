@@ -2,6 +2,7 @@
     "packages": {
         ".": {
             "include-component-in-tag": false,
+            "last-release-sha": "3fd3eb637c4ab96b8d8cbd0a1b9faebc729e2cc1",
             "release-type": "simple",
             "changelog-sections": [
                 {
