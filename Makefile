@@ -21,7 +21,7 @@ lint:
 
 test: $(TARGET_EXE) ##	Run	tests
 	python -m pytest ./tests/*.py
-	
+
 $(TARGET_EXE): $(GN_EXE)
 	$(GN_EXE) gen out
 	$(NINJA_EXE) -C	out
